@@ -42,6 +42,7 @@
   background: #4EA4D9;
   transition: .3s;
   align-items: center;
+  cursor: pointer;
   font-weight: 700;
   font-size: 11px;
   line-height: 13px;

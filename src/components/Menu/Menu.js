@@ -11,14 +11,14 @@ export const Menu = () => {
             name: 'Текущие и выполненные проекты АТЭ',
             image: navimg1,
             icon: navicon1,
-            pathname: 'https://ate5.avt.promo/',
+            pathname: 'https://ate5.avt.promo/project',
           },
           {
             id: "2",
             name: 'Филиалы и Представительства АТЭ',
             image: navimg2,
             icon: navicon2,
-            pathname: 'https://ate5.avt.promo/',
+            pathname: 'https://ate5.avt.promo/branch',
           },
           {
             id: "3",
@@ -39,7 +39,7 @@ export const Menu = () => {
             name: 'Портфель заказов АТЭ',
             image: navimg5,
             icon: navicon5,
-            pathname: 'https://ate5.avt.promo/',
+            pathname: 'https://ate5.avt.promo/portfolio',
           },
     ]
     

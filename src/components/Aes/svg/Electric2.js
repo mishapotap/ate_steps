@@ -13,7 +13,7 @@ export const Electric2 = (props) => {
     return (
         <Fragment>
             <rect x="130" y="101" width="1658.25" height="737" fill="url(#pattern10)"
-                style={{opacity: (isHighlighted && isActive) || !isHighlighted ? 0 : 1}}
+                style={{opacity: (isHighlighted && isActive) || !isHighlighted ? 1 : 0}}
             />
 
             <circle cx="498" cy="720" r="4" fill="white" style={{opacity: isHighlighted ? 1 : 0}}/>

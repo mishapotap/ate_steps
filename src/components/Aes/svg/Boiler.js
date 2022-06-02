@@ -13,7 +13,7 @@ export const Boiler = (props) => {
     return (
         <Fragment>
             <rect x="131" y="101" width="1658.25" height="737" fill="url(#pattern8)"
-                style={{opacity: (isHighlighted && isActive) || !isHighlighted ? 0 : 1}}
+                style={{opacity: (isHighlighted && isActive) || !isHighlighted ? 1 : 0}}
             />
 
             <circle cx="848" cy="754" r="4" fill="white" style={{opacity: isHighlighted ? 1 : 0}}/>
