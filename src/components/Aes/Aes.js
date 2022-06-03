@@ -192,7 +192,7 @@ export const Aes = (props) => {
             </Modal>
 
             <Modal 
-                isOpened={isReactorOpened && step !== 'a2' && step !== 'a3' && step !== 'a4' && step !== 'b0' && step !== 'b1' && step !== 'b2'} 
+                isOpened={isReactorOpened && step !== 'a2' && step !== 'a3' && step !== 'a4' && step !== 'b0' && step !== 'b1' && step !== 'b2' && step !== 'v0'} 
                 onClose={() => {setIsReactorOpened(false)}}
             >
                 <div>
@@ -334,6 +334,27 @@ export const Aes = (props) => {
                             <span>Смотреть далее</span>
                             <span>Подэтап В</span>
                         </Link>
+                    </div>
+                </div>
+            </Modal>
+            <Modal 
+                isOpened={isReactorOpened && step === 'v0'} 
+                onClose={() => {setIsReactorOpened(false)}}
+            >
+                <div>
+                    <div className='modal__stage-subtitle'><div>В</div>этап</div>
+                    <h3>Здание реактора (UJA)</h3>
+                    <div className='modal__img__wrapper'>
+                        <img src={require("../../assets/img/Map/Modals/A0/ReactorBuild/modal-01.jpg")} className='modal__img' alt="" />
+                        <img src={require("../../assets/img/Map/Modals/A0/ReactorBuild/modal-02.jpg")} className='modal__img' alt="" />
+                        <img src={require("../../assets/img/Map/Modals/A0/ReactorBuild/modal-03.jpg")} className='modal__img' alt="" />
+                    </div>
+                    <div className='text'>
+                        <ul>
+                            <li>Поэтапный подъем мощности реактора до 40%.</li>
+                            <li>Продолжается выполнение испытаний и проверок оборудования реактора - физические эксперименты, снятие теплогидравлических характеристик оборудования, пусконаладочные измерения.</li>
+                            <li>Сдача блока в опытно-промышленную эксплуатацию.</li>
+                        </ul>
                     </div>
                 </div>
             </Modal>

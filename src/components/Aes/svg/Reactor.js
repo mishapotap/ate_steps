@@ -20,7 +20,7 @@ export const Reactor = (props) => {
     return (
         <Fragment>
             <rect x="131" y="100" width="1658.25" height="737" fill="url(#pattern5)"
-                style={{opacity: (isHighlighted && isActive) || !isHighlighted ? 1 : 0}}
+                style={{opacity: (isHighlighted && isActive) || !isHighlighted ? 0 : 1}}
             />
 
             <circle cx="1045" cy="311" r="4" fill="white" 

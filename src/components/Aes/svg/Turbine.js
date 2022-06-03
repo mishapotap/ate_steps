@@ -14,7 +14,7 @@ export const Turbine = (props) => {
     return (
         <Fragment>
             <rect x="131" y="100" width="1658.25" height="737" fill="url(#pattern6)"
-                style={{opacity: (isHighlighted && isActive) || !isHighlighted ? 1 : 0}}
+                style={{opacity: (isHighlighted && isActive) || !isHighlighted ? 0 : 1}}
             />
 
             <circle cx="812" cy="375" r="4" fill="white" style={{opacity: isHighlighted || isHighlighted ? 1 : 0}}/>

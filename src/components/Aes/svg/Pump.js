@@ -13,7 +13,7 @@ export const Pump = (props) => {
     return (
         <Fragment>
             <rect x="130" y="101" width="1659.78" height="737" fill="url(#pattern2)"
-                style={{opacity: (isHighlighted && isActive) || !isHighlighted ? 1 : 0}}
+                style={{opacity: (isHighlighted && isActive) || !isHighlighted ? 0 : 1}}
             />
 
             <circle cx="584" cy="420" r="4" fill="white" style={{opacity: isHighlighted ? 1 : 0}}/>

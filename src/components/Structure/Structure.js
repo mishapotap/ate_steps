@@ -16,7 +16,7 @@ export const Structure = () => {
     
     return (
         <div className='structure'>
-            <div className='structure__title'>Положение АТЭ в структуре создания АЭС</div>
+            <div className='structure__title'>Положение АТЭ в структуре сооружения АЭС и ОИАЭ</div>
             <div className='structure__stages'>
                 <div className="structure__stage active" onClick={setActiveClass}>
                     <div className='structure__image__wrapper' style={{backgroundImage: `url(${Structure1})`}}>
@@ -27,12 +27,12 @@ export const Structure = () => {
                         <Ellipse/>
                     </div>
                     <div className='structure__logos'>
-                        <img src={structure1_icon1} alt='' />
+                        {/* <img src={structure1_icon1} alt='' /> */}
                         <img src={structure1_icon2} alt='' />
-                        <img src={structure1_icon3} alt='' />
-                        <img src={structure1_icon4} alt='' />
-                        <img src={structure1_icon5} alt='' />
-                        <img src={structure1_icon6} alt='' />
+                        {/* <img src={structure1_icon3} alt='' /> */}
+                        {/* <img src={structure1_icon4} alt='' /> */}
+                        {/* <img src={structure1_icon5} alt='' /> */}
+                        {/* <img src={structure1_icon6} alt='' /> */}
                         <img src={structure1_icon7} alt='' />
                     </div>
                 </div>

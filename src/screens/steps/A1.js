@@ -70,19 +70,88 @@ export const A1 = () => {
                         <div className='modal__subtext'>
                             Подэтап, в течение которого, начиная с системы дистиллята, производится приемка технологических систем и оборудования реакторного отделения и машинного зала блока из монтажа в ПНР.
                         </div>
-                        <ol>
-                            <li>Выполняются пусконаладочные работы и испытания на системах и оборудовании для подтверждения проектной работы и готовности к выходу на номинальные параметры температуры-давления на следующем подэтапе – А-3.</li>
-                            <li>Выполняются испытания систем безопасности на открытый реактор.</li>
-                            <li>Выполняется загрузка имитационной активной зоны (имитаторами ТВС – тепловыделяющей сборки), по своим параметрам аналогичной настоящей активной зоне и последующая сборка реактора для проведения испытаний реакторной установки во время холодно-горячей обкатки.</li>
-                            <li>Наладка перегрузочной машины и транспортно-технологического оборудования.</li>
-                            <li>Наладка АСУ ТП (измерительные каналы, защиты и блокировки, сигнализация, схемы дистанционного управления механизмами и арматурой, пошаговых программ управления, архивация и пр.).</li>
-                            <li>Выполняются работы на системах и оборудовании на завершающей стадии монтажа – послемонтажные очистки, гидравлические (пневматические) испытания и индивидуальные испытания и опробования оборудования.</li>
-                            <li>Выполняется вибродиагностика оборудования и наладка опорно-подвесной системы.</li>
-                            <li>Регистрация оборудования и систем, включая СГО, в органах надзора.</li>
-                            <li>Проверяется плотность первого контура Р=35 кг/см².</li>
-                            <li>Проводится поканальное опробование аварийных дизель-генераторов с работой на сеть и опробования схемы ступенчатого пуска механизмов (с реальным разворотом механизмов). </li>
-                        </ol>
                     </div>
+                    <div className='modal__row'>
+                        <div className='modal__col__img'>
+                            <img src={require("../../assets/img/Map/Modals/A1/Items/modal-01.jpg")} alt="" />
+                        </div>
+                        <div className='modal__col__text'>
+                            <div className='text'>Выполняются пусконаладочные работы и испытания на системах и оборудовании для подтверждения проектной работы и готовности к выходу на номинальные параметры температуры-давления на следующем подэтапе – А-3.</div>
+                        </div>
+                    </div>
+                    <div className='modal__row'>
+                        <div className='modal__col__img'>
+                            <img src={require("../../assets/img/Map/Modals/A1/Items/modal-02.jpg")} alt="" />
+                        </div>
+                        <div className='modal__col__text'>
+                            <div className='text'>Выполняются испытания систем безопасности на открытый реактор.</div>
+                        </div>
+                    </div>
+                    <div className='modal__row'>
+                        <div className='modal__col__img'>
+                            <img src={require("../../assets/img/Map/Modals/A1/Items/modal-03.jpg")} alt="" />
+                        </div>
+                        <div className='modal__col__text'>
+                            <div className='text'>Выполняется загрузка имитационной активной зоны (имитаторами ТВС – тепловыделяющей сборки), по своим параметрам аналогичной настоящей активной зоне и последующая сборка реактора для проведения испытаний реакторной установки во время холодно-горячей обкатки.</div>
+                        </div>
+                    </div>
+                    <div className='modal__row'>
+                        <div className='modal__col__img'>
+                            <img src={require("../../assets/img/Map/Modals/A1/Items/modal-04.jpg")} alt="" />
+                        </div>
+                        <div className='modal__col__text'>
+                            <div className='text'>Наладка перегрузочной машины и транспортно-технологического оборудования.</div>
+                        </div>
+                    </div>
+                    <div className='modal__row'>
+                        <div className='modal__col__img'>
+                            <img src={require("../../assets/img/Map/Modals/A1/Items/modal-05.jpg")} alt="" />
+                        </div>
+                        <div className='modal__col__text'>
+                            <div className='text'>Наладка АСУ ТП (измерительные каналы, защиты и блокировки, сигнализация, схемы дистанционного управления механизмами и арматурой, пошаговых программ управления, архивация и пр.).</div>
+                        </div>
+                    </div>
+                    <div className='modal__row'>
+                        <div className='modal__col__img'>
+                            <img src={require("../../assets/img/Map/Modals/A1/Items/modal-06.jpg")} alt="" />
+                        </div>
+                        <div className='modal__col__text'>
+                            <div className='text'>Выполняются работы на системах и оборудовании на завершающей стадии монтажа – послемонтажные очистки, гидравлические (пневматические) испытания и индивидуальные испытания и опробования оборудования.</div>
+                        </div>
+                    </div>
+                    <div className='modal__row'>
+                        <div className='modal__col__img'>
+                            <img src={require("../../assets/img/Map/Modals/A1/Items/modal-07.jpg")} alt="" />
+                        </div>
+                        <div className='modal__col__text'>
+                            <div className='text'>Выполняется вибродиагностика оборудования и наладка опорно-подвесной системы.</div>
+                        </div>
+                    </div>
+                    <div className='modal__row'>
+                        <div className='modal__col__img'>
+                            <img src={require("../../assets/img/Map/Modals/A1/Items/modal-08.jpg")} alt="" />
+                        </div>
+                        <div className='modal__col__text'>
+                            <div className='text'>Регистрация оборудования и систем, включая СГО, в органах надзора.</div>
+                        </div>
+                    </div>
+                    <div className='modal__row'>
+                        <div className='modal__col__img'>
+                            <img src={require("../../assets/img/Map/Modals/A1/Items/modal-09.jpg")} alt="" />
+                        </div>
+                        <div className='modal__col__text'>
+                            <div className='text'>Проверяется плотность первого контура Р=35 кг/см².</div>
+                        </div>
+                    </div>
+                    <div className='modal__row'>
+                        <div className='modal__col__img'>
+                            <img src={require("../../assets/img/Map/Modals/A1/Items/modal-10.jpg")} alt="" />
+                        </div>
+                        <div className='modal__col__text'>
+                            <div className='text'>Проводится поканальное опробование аварийных дизель-генераторов с работой на сеть и опробования схемы ступенчатого пуска механизмов (с реальным разворотом механизмов).</div>
+                        </div>
+                    </div>
+                    
                     <div className='modal__link'>
                         <Link to={routes.A2}>
                             <span>Смотреть далее</span>

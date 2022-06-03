@@ -43,7 +43,7 @@ export const Map = () => {
 
     return (
         <div className='page'>
-            <div className='map__title'>Этапы пусконаладочных работ в структуре АЭС</div>
+            <div className='map__title'>Этапы пусконаладочных работ</div>
             <div className="navigation_prev_arrow swiper-button-prev">
                 <MapArrow />
             </div>
