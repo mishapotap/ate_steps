@@ -58,6 +58,11 @@ export const G2 = () => {
                 <div>
                     <div className='modal__stage-subtitle'><div>Г2</div>подэтап</div>
                     <h3>Комплексное опробование блока АЭС на номинальной мощности</h3>
+                    <div className='modal__img__wrapper'>
+                        <img src={require("../../assets/img/Map/Modals/G2/modal-01.jpg")} className='modal__img' alt="" />
+                        <img src={require("../../assets/img/Map/Modals/G2/modal-02.jpg")} className='modal__img' alt="" />
+                        <img src={require("../../assets/img/Map/Modals/G2/modal-03.jpg")} className='modal__img' alt="" />
+                    </div>
                     <div className='text'>
                         <div className='modal__subtext'>
                             Выполняется нормальная и непрерывная работа основного оборудования энергоблока в течении 15 суток при постоянной или поочередной работе всего вспомогательного оборудования по проектной схеме на номинальной мощности

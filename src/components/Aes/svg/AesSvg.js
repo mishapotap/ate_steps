@@ -28,10 +28,10 @@ export const AesSvg = (props) => {
     const isCommonVisible = useMemo(() => {
         if (
             step === 'a0'
-            || step === 'a1'
-            || step === 'g0'
-            || step === 'g1'
-            || step === 'g2'
+            // || step === 'a1'
+            // || step === 'g0'
+            // || step === 'g1'
+            // || step === 'g2'
         ) {
             return true;
         } else {
@@ -273,13 +273,13 @@ export const AesSvg = (props) => {
 /> */}
 
 <rect x="775" y="350" width="190" height="150" fill="transparent" 
-    style={{cursor: 'pointer', visibility: (isCommonVisible || step === 'v0') ? 'visible' : 'hidden'}}
+    style={{cursor: 'pointer', visibility: (isCommonVisible || step === 'v0' || step === 'g1' || step === 'g2') ? 'visible' : 'hidden'}}
     onMouseEnter={() => {setIsTurbineActive(true)}}
     onClick={handleTurbineClick}
     onMouseLeave={() => {setIsTurbineActive(false)}}
 />
 <rect x="890" y="220" width="150" height="40" fill="transparent" 
-    style={{cursor: 'pointer', visibility: (isCommonVisible || step === 'v0') ? 'visible' : 'hidden'}}
+    style={{cursor: 'pointer', visibility: (isCommonVisible || step === 'v0' || step === 'g1' || step === 'g2') ? 'visible' : 'hidden'}}
     onMouseEnter={() => {setIsTurbineActive(true)}}
     onClick={handleTurbineClick}
     onMouseLeave={() => {setIsTurbineActive(false)}}
@@ -325,7 +325,7 @@ export const AesSvg = (props) => {
 />
 
 <rect x="970" y="282" width="150" height="200" fill="transparent" 
-    style={{cursor: 'pointer', visibility: 'visible' }}
+    style={{cursor: 'pointer', visibility: (step !== 'a1' && step !== 'g0') ? 'visible' : 'hidden' }}
     onMouseEnter={() => {setIsReactorActive(true)}}
     onClick={handleReactorClick}
     onMouseLeave={() => {setIsReactorActive(false)}}
@@ -333,7 +333,7 @@ export const AesSvg = (props) => {
 {/* Маленькая надпись (Центральный реактор)*/}
 <rect x="1070" y="222" width="170" height="40" fill="transparent" 
     style={{cursor: 'pointer', visibility: 
-    (isCommonVisible || step === 'b0' || step === 'v0') ? 'visible' : 'hidden'}}
+    (isCommonVisible || step === 'b0' || step === 'v0' || step === 'g1' || step === 'g2') ? 'visible' : 'hidden'}}
     onMouseEnter={() => {setIsReactorActive(true)}}
     onClick={handleReactorClick}
     onMouseLeave={() => {setIsReactorActive(false)}}

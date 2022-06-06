@@ -4,10 +4,10 @@ export const Cleaning2 = (props) => {
     const {isActive, step} = props
     const isHighlighted = useMemo(() => {
         return step === 'a0'
-        || step === 'a1'
-        || step === 'g0'
-        || step === 'g1'
-        || step === 'g2';
+        // || step === 'a1'
+        // || step === 'g0'
+        // || step === 'g1'
+        // || step === 'g2';
     }, [step]);
 
     return (

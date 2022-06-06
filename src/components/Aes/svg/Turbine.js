@@ -4,9 +4,9 @@ export const Turbine = (props) => {
     const {isActive, step} = props
     const isHighlighted = useMemo(() => {
         return step === 'a0'
-        || step === 'a1'
+        // || step === 'a1'
         || step === 'v0'
-        || step === 'g0'
+        // || step === 'g0'
         || step === 'g1'
         || step === 'g2';
     }, [step]);

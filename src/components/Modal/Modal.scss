@@ -37,7 +37,7 @@
 	}
 	
 	@include xxl {
-		padding: 30px;
+		padding: 50px;
 	}
 
 	.modal-transition-enter & {
@@ -69,9 +69,9 @@
 		position: absolute;
 		width: 40px;
 		height: 40px;
-		right: 55px;
-		top: 55px;
-		z-index: 10;
+		right: 45px;
+		top: 45px;
+		z-index: 15;
 		border: 0.5px solid #000000;
 		box-sizing: border-box;
 		display: flex;

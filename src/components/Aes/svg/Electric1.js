@@ -12,7 +12,7 @@ export const Electric1 = (props) => {
                 style={{opacity: isHighlighted ? 1 : 0}}
             /> */}
 
-            <circle cx="826" cy="473" r="4" fill="white" style={{opacity: isHighlighted ? 0 : 1}}/>
+            <circle cx="826" cy="473" r="4" fill="white" style={{opacity: isHighlighted ? 1 : 0}}/>
 
             <path d="M826 472.353L856.535 521.353" stroke="white" style={{opacity: isHighlighted ? 1 : 0}}/>
 
