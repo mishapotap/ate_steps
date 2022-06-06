@@ -177,7 +177,7 @@ a {
 .step-wrapper {
   display: flex;
   position: absolute;
-  top: 10vh;
+  top: 8vh;
   right: 2.6vw;
   z-index: 10; }
 
@@ -217,7 +217,7 @@ a {
 
 .step-title__details {
   position: absolute;
-  top: 13vh;
+  top: 11vh;
   right: 2.6vw;
   z-index: 10;
   text-align: right;

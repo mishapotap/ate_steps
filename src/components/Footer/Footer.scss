@@ -18,6 +18,10 @@
         height: 70px;
         padding: 0 30px;
     }
+    @media (max-height: 800px) {
+        height: 55px;
+        padding: 0 30px;
+    };
 }
 .footer__btns {
     flex: 0 0 65px;
@@ -128,6 +132,9 @@
         left: 69px;
         bottom: 30px;
     }
+    @media (max-height: 800px) {
+        bottom: 15px;
+    };
 }
 
 .volume-btn {

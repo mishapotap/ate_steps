@@ -4,14 +4,12 @@
 .header {
     display: flex;
     align-items: center;
-    height: 88px;
+    height: 6vh;
+    max-height: 80px;
     position: relative;
     z-index: 10;
     border-bottom: 1px solid #DBDBDB;
     background: $white;
-    @include xxl {
-        height: 56px;
-    }
 }
 
 .header__logo {
@@ -19,7 +17,9 @@
     padding-left: 2.5vw;
 
     & img {
-        width: 160px;
+        // max-width: 160px;
+        height: 5vh;
+        max-height: 75px;
     }
 }
 
@@ -48,7 +48,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 88px;
+    height: 6vh;
+    max-height: 80px;
     background: #4EA4D9;
     transition: .3s;
     align-items: center;
@@ -63,7 +64,6 @@
     text-transform: uppercase;
     color: $white;
     @include xxl {
-        height: 56px;
         font-size: 10px;
     }
 
