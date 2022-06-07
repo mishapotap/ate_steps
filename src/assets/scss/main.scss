@@ -149,7 +149,7 @@ a {
 	color: $primary;
 	
 	@include xl {
-		font-size: 19px;
+		font-size: 18px;
 	}
 
 	&::before {
@@ -174,7 +174,7 @@ a {
 	margin-right: 32px;
 
 	@include xl {
-		font-size: 19px;
+		font-size: 18px;
 	}
 }
 .step-title__details {

@@ -330,6 +330,7 @@ export const AesSvg = (props) => {
     onClick={handleReactorClick}
     onMouseLeave={() => {setIsReactorActive(false)}}
 />
+
 {/* Маленькая надпись (Центральный реактор)*/}
 <rect x="1070" y="222" width="170" height="40" fill="transparent" 
     style={{cursor: 'pointer', visibility: 
@@ -338,6 +339,7 @@ export const AesSvg = (props) => {
     onClick={handleReactorClick}
     onMouseLeave={() => {setIsReactorActive(false)}}
 />
+
 {/* А2 (Центральный реактор)*/}
 <rect x="1100" y="200" width="430" height="60" fill="transparent" 
     style={{cursor: 'pointer', visibility: step === 'a2' ? 'visible' : 'hidden'}}
@@ -345,6 +347,7 @@ export const AesSvg = (props) => {
     onClick={handleReactorClick}
     onMouseLeave={() => {setIsReactorActive(false)}}
 />
+
 {/* А3 (Центральный реактор)*/}
 <rect x="1080" y="230" width="350" height="40" fill="transparent" 
     style={{cursor: 'pointer', visibility: step === 'a3' ? 'visible' : 'hidden'}}
@@ -352,12 +355,26 @@ export const AesSvg = (props) => {
     onClick={handleReactorClick}
     onMouseLeave={() => {setIsReactorActive(false)}}
 />
-{/* А4 Б1 Б2 (Центральный реактор)*/}
-<rect x="1140" y="160" width="260" height="60" fill="transparent" 
-    style={{cursor: 'pointer', visibility: 
-    (step === 'a4') ? 'visible' 
-    : (step === 'b1') ? 'visible' 
-    : (step === 'b2') ? 'visible' : 'hidden'}}
+
+{/* А4 (Центральный реактор)*/}
+<rect x="1080" y="230" width="220" height="50" fill="transparent" 
+    style={{cursor: 'pointer', visibility: step === 'a4' ? 'visible' : 'hidden'}}
+    onMouseEnter={() => {setIsReactorActive(true)}}
+    onClick={handleReactorClick}
+    onMouseLeave={() => {setIsReactorActive(false)}}
+/>
+
+{/* Б1 (Центральный реактор)*/}
+<rect x="1080" y="230" width="250" height="50" fill="transparent" 
+    style={{cursor: 'pointer', visibility: step === 'b1' ? 'visible' : 'hidden'}}
+    onMouseEnter={() => {setIsReactorActive(true)}}
+    onClick={handleReactorClick}
+    onMouseLeave={() => {setIsReactorActive(false)}}
+/>
+
+{/* Б2 (Центральный реактор)*/}
+<rect x="1080" y="235" width="200" height="30" fill="transparent" 
+    style={{cursor: 'pointer', visibility: step === 'b2' ? 'visible' : 'hidden'}}
     onMouseEnter={() => {setIsReactorActive(true)}}
     onClick={handleReactorClick}
     onMouseLeave={() => {setIsReactorActive(false)}}

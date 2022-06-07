@@ -17,6 +17,7 @@ export const Modal = (props) => {
 							<div className='modal__close' onClick={onClose}><CloseIcon /></div>
 							{props.children}
 						</div>
+						<div className='modal__closearea' style={{position: 'absolute', width: '100%', height: '100%', zIndex: '-1'}} onClick={onClose}></div>
 					</div>
 				</CSSTransition>
 			}

@@ -4,9 +4,10 @@ import * as routes from '../../const/routes';
 import './Aes.scss'
 import { AesSvg } from './svg/AesSvg';
 
+import ReactorPic from '../../assets/img/Scheme-4.gif'
 import ReactorPic1 from '../../assets/img/Scheme-2.gif'
 import ReactorPic2 from '../../assets/img/Scheme-3.gif'
-import ReactorPic3 from '../../assets/img/Scheme-4.gif'
+import { Power } from '../Power';
 
 
 
@@ -191,8 +192,7 @@ export const Aes = (props) => {
                 </div>
             </Modal>
 
-            <Modal 
-                isOpened={isReactorOpened && step !== 'a2' && step !== 'a3' && step !== 'a4' && step !== 'b0' && step !== 'b1' && step !== 'b2' && step !== 'v0'} 
+            <Modal isOpened={isReactorOpened && step !== 'a2' && step !== 'a3' && step !== 'a4' && step !== 'b0' && step !== 'b1' && step !== 'b2' && step !== 'v0' && step !== 'g1' && step !== 'g2'} 
                 onClose={() => {setIsReactorOpened(false)}}
             >
                 <div>
@@ -347,24 +347,215 @@ export const Aes = (props) => {
                     </div>
                 </div>
             </Modal>
-            <Modal 
-                isOpened={isReactorOpened && step === 'v0'} 
-                onClose={() => {setIsReactorOpened(false)}}
-            >
+            <Modal isOpened={isReactorOpened && step === 'v0'} onClose={() => {setIsReactorOpened(false)}} className='modal_large'>
                 <div>
                     <div className='modal__stage-subtitle'><div>В</div>этап</div>
-                    <h3>Здание реактора (UJA)</h3>
-                    <div className='modal__img__wrapper'>
-                        <img src={require("../../assets/img/Map/Modals/A0/ReactorBuild/modal-01.jpg")} className='modal__img' alt="" />
-                        <img src={require("../../assets/img/Map/Modals/A0/ReactorBuild/modal-02.jpg")} className='modal__img' alt="" />
-                        <img src={require("../../assets/img/Map/Modals/A0/ReactorBuild/modal-03.jpg")} className='modal__img' alt="" />
-                    </div>
+                    <h3>Энергетический пуск</h3>
+                    <img src={ReactorPic} style={{width: "100%"}} alt='' /> 
                     <div className='text'>
+                        <div className='modal__subtext'>Ввод АЭС в эксплуатацию от завершения физического пуска реактора до начала выработки электроэнергии.</div>
                         <ul>
                             <li>Поэтапный подъем мощности реактора до 40%.</li>
                             <li>Продолжается выполнение испытаний и проверок оборудования реактора - физические эксперименты, снятие теплогидравлических характеристик оборудования, пусконаладочные измерения.</li>
                             <li>Сдача блока в опытно-промышленную эксплуатацию.</li>
                         </ul>
+                    </div>
+                    <div className='modal__img__wrapper'>
+                        <img src={require("../../assets/img/Map/Modals/V0/modal-01.jpg")} className='modal__img' alt="" />
+                        <img src={require("../../assets/img/Map/Modals/V0/modal-02.jpg")} className='modal__img' alt="" />
+                        <img src={require("../../assets/img/Map/Modals/V0/modal-03.jpg")} className='modal__img' alt="" />
+                    </div>
+                    <div className='text'>
+                        Выполняется повышение мощности реактора поэтапно до уровня 40 % от номинальной мощности. Выполняются проверки, испытаний и подтверждение достоверности данных с систем контроля и управления, испытаний основных регуляторов энергоблока, уровнемеров, отсечных и предохранительных устройств. Продолжаются физические испытания и эксперименты. Выполняется первый толчок турбины, разворот турбины, вывод турбины на номинальные обороты. Выполняется синхронизация и включение генератора в электрическую сеть, энергоблок начинает вырабатывать электроэнергию в энергосистему страны.
+                    </div>
+                    <div className='modal__link'>
+                        <Link to={routes.G0}>
+                            <span>Смотреть далее</span>
+                            <span>Этап Г</span>
+                        </Link>
+                    </div>
+                </div>
+            </Modal>
+            <Modal isOpened={isTurbineOpened && step === 'v0'} onClose={() => {setIsTurbineOpened(false)}} className='modal_large'>
+                <div>
+                    <div className='modal__stage-subtitle'><div>В</div>этап</div>
+                    <h3>Энергетический пуск</h3>
+                    <img src={ReactorPic} style={{width: "100%"}} alt='' /> 
+                    <div className='text'>
+                        <div className='modal__subtext'>Ввод АЭС в эксплуатацию от завершения физического пуска реактора до начала выработки электроэнергии.</div>
+                        <ul>
+                            <li>Поэтапный подъем мощности реактора до 40%.</li>
+                            <li>Продолжается выполнение испытаний и проверок оборудования реактора - физические эксперименты, снятие теплогидравлических характеристик оборудования, пусконаладочные измерения.</li>
+                            <li>Сдача блока в опытно-промышленную эксплуатацию.</li>
+                        </ul>
+                    </div>
+                    <div className='modal__img__wrapper'>
+                        <img src={require("../../assets/img/Map/Modals/V0/modal-01.jpg")} className='modal__img' alt="" />
+                        <img src={require("../../assets/img/Map/Modals/V0/modal-02.jpg")} className='modal__img' alt="" />
+                        <img src={require("../../assets/img/Map/Modals/V0/modal-03.jpg")} className='modal__img' alt="" />
+                    </div>
+                    <div className='text'>
+                        Выполняется повышение мощности реактора поэтапно до уровня 40 % от номинальной мощности. Выполняются проверки, испытаний и подтверждение достоверности данных с систем контроля и управления, испытаний основных регуляторов энергоблока, уровнемеров, отсечных и предохранительных устройств. Продолжаются физические испытания и эксперименты. Выполняется первый толчок турбины, разворот турбины, вывод турбины на номинальные обороты. Выполняется синхронизация и включение генератора в электрическую сеть, энергоблок начинает вырабатывать электроэнергию в энергосистему страны.
+                    </div>
+                    <div className='modal__link'>
+                        <Link to={routes.G0}>
+                            <span>Смотреть далее</span>
+                            <span>Этап Г</span>
+                        </Link>
+                    </div>
+                </div>
+            </Modal>
+            <Modal isOpened={isReactorOpened && step === 'g1'} onClose={() => {setIsReactorOpened(false)}} className='size-l'>
+                <div>
+                    <div className='modal__stage-subtitle'><div>Г1</div>подэтап</div>
+                    <h3>Освоение мощности</h3>
+                    <div className='text'>
+                        <div className='modal__subtext'>
+                            Освоение мощности блока АЭС от включения генератора в сеть до 100% номинальной мощности.<br />
+                            Номинальная мощность (номинальный уровень) – это 100% проектная мощность реактора.
+                        </div>
+                        <ol>
+                            <li>
+                                Поэтапное освоение уровней мощности - от 40 до 100 % (50, 75, 90,100 %).
+                                <Power percent={50} />
+                            </li>
+                            <li>Нейтронно-физические эксперименты;</li>
+                            <li>Теплогидравлические и теплофизические эксперименты;</li>
+                            <li>Испытание систем и оборудования турбины и других систем с выведенной УПЗ (ускоренной предупредительной защитой);</li>
+                            <li>Настройка регуляторов, программ пошагового управления;</li>
+                            <li>
+                                Выполняются динамические испытания по проверки работы систем и оборудования при отключении (подключении) в стационарных и переходных режимах:
+                                <ul>
+                                    <li>Отключение одного ГЦН, двух ГЦН;</li>
+                                    <li>Отключение питательного насоса;</li>
+                                    <li>Отключение турбины как со срывом вакуума, так и без срыва;</li>
+                                    <li>Полное обесточение блока с проверкой режимно естественной циркуляции.</li>
+                                </ul>
+                            </li>
+                            <li>Выполняется проверка биологической защиты, проверяется радиационная обстановка в помещениях АЭС и за ее пределами.</li>
+                            {/* <li>
+                                Освоение 75% номинального уровня мощности
+                                <Power percent={75} />
+                                <ul>
+                                    <li>Испытания аналогичные уровню мощности 50% Nом за исключением – не делается испытание по полному обесточению блока.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Освоение 100% номинального уровня мощности
+                                <ul>
+                                    <li>Испытания аналогичные уровню мощности 75% Nом.</li>
+                                </ul>
+                            </li> */}
+                        </ol>
+                    </div>
+                    <div className='modal__link'>
+                        <Link to={routes.G2}>
+                            <span>Смотреть далее</span>
+                            <span>Подэтап Г2</span>
+                        </Link>
+                    </div>
+                </div>
+            </Modal>
+            <Modal isOpened={isTurbineOpened && step === 'g1'} onClose={() => {setIsTurbineOpened(false)}} className='size-l'>
+                <div>
+                    <div className='modal__stage-subtitle'><div>Г1</div>подэтап</div>
+                    <h3>Освоение мощности</h3>
+                    <div className='text'>
+                        <div className='modal__subtext'>
+                            Освоение мощности блока АЭС от включения генератора в сеть до 100% номинальной мощности.<br />
+                            Номинальная мощность (номинальный уровень) – это 100% проектная мощность реактора.
+                        </div>
+                        <ol>
+                            <li>
+                                Поэтапное освоение уровней мощности - от 40 до 100 % (50, 75, 90,100 %).
+                                <Power percent={50} />
+                            </li>
+                            <li>Нейтронно-физические эксперименты;</li>
+                            <li>Теплогидравлические и теплофизические эксперименты;</li>
+                            <li>Испытание систем и оборудования турбины и других систем с выведенной УПЗ (ускоренной предупредительной защитой);</li>
+                            <li>Настройка регуляторов, программ пошагового управления;</li>
+                            <li>
+                                Выполняются динамические испытания по проверки работы систем и оборудования при отключении (подключении) в стационарных и переходных режимах:
+                                <ul>
+                                    <li>Отключение одного ГЦН, двух ГЦН;</li>
+                                    <li>Отключение питательного насоса;</li>
+                                    <li>Отключение турбины как со срывом вакуума, так и без срыва;</li>
+                                    <li>Полное обесточение блока с проверкой режимно естественной циркуляции.</li>
+                                </ul>
+                            </li>
+                            <li>Выполняется проверка биологической защиты, проверяется радиационная обстановка в помещениях АЭС и за ее пределами.</li>
+                            {/* <li>
+                                Освоение 75% номинального уровня мощности
+                                <Power percent={75} />
+                                <ul>
+                                    <li>Испытания аналогичные уровню мощности 50% Nом за исключением – не делается испытание по полному обесточению блока.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Освоение 100% номинального уровня мощности
+                                <ul>
+                                    <li>Испытания аналогичные уровню мощности 75% Nом.</li>
+                                </ul>
+                            </li> */}
+                        </ol>
+                    </div>
+                    <div className='modal__link'>
+                        <Link to={routes.G2}>
+                            <span>Смотреть далее</span>
+                            <span>Подэтап Г2</span>
+                        </Link>
+                    </div>
+                </div>
+            </Modal>
+            <Modal isOpened={isReactorOpened && step === 'g2'} onClose={() => {setIsReactorOpened(false)}}>
+                <div>
+                    <div className='modal__stage-subtitle'><div>Г2</div>подэтап</div>
+                    <h3>Комплексное опробование блока АЭС на номинальной мощности</h3>
+                    <div className='modal__img__wrapper'>
+                        <img src={require("../../assets/img/Map/Modals/G2/modal-01.jpg")} className='modal__img' alt="" />
+                        <img src={require("../../assets/img/Map/Modals/G2/modal-02.jpg")} className='modal__img' alt="" />
+                        <img src={require("../../assets/img/Map/Modals/G2/modal-03.jpg")} className='modal__img' alt="" />
+                    </div>
+                    <div className='text'>
+                        <div className='modal__subtext'>
+                            Выполняется нормальная и непрерывная работа основного оборудования энергоблока в течении 15 суток при постоянной или поочередной работе всего вспомогательного оборудования по проектной схеме на номинальной мощности
+                        </div>
+                        <ul>
+                            <li>Проводится комплексное 15 суточное опробование блока на номинальной мощности (сдаточные испытания) – нормальная и непрерывная работа основного оборудования энергоблока в течении 15 суток при постоянной или поочередной работе всего вспомогательного оборудования по проектной схеме на номинальной мощности в базисном режиме, осуществляется поддержание проектных технико-экономических показателей и характеристик с целью определения готовности блока к промышленной эксплуатации.</li>
+                            <li>Проводится приемка блока приемочной комиссией в постоянную эксплуатацию.</li>
+                        </ul>
+                    </div>
+                    <div className='modal__link'>
+                        <Link to={routes.FINAL}>
+                            <span>Смотреть далее</span>
+                            <span>Промышленная эксплуатация</span>
+                        </Link>
+                    </div>
+                </div>
+            </Modal>
+            <Modal isOpened={isTurbineOpened && step === 'g2'} onClose={() => {setIsTurbineOpened(false)}}>
+                <div>
+                    <div className='modal__stage-subtitle'><div>Г2</div>подэтап</div>
+                    <h3>Комплексное опробование блока АЭС на номинальной мощности</h3>
+                    <div className='modal__img__wrapper'>
+                        <img src={require("../../assets/img/Map/Modals/G2/modal-01.jpg")} className='modal__img' alt="" />
+                        <img src={require("../../assets/img/Map/Modals/G2/modal-02.jpg")} className='modal__img' alt="" />
+                        <img src={require("../../assets/img/Map/Modals/G2/modal-03.jpg")} className='modal__img' alt="" />
+                    </div>
+                    <div className='text'>
+                        <div className='modal__subtext'>
+                            Выполняется нормальная и непрерывная работа основного оборудования энергоблока в течении 15 суток при постоянной или поочередной работе всего вспомогательного оборудования по проектной схеме на номинальной мощности
+                        </div>
+                        <ul>
+                            <li>Проводится комплексное 15 суточное опробование блока на номинальной мощности (сдаточные испытания) – нормальная и непрерывная работа основного оборудования энергоблока в течении 15 суток при постоянной или поочередной работе всего вспомогательного оборудования по проектной схеме на номинальной мощности в базисном режиме, осуществляется поддержание проектных технико-экономических показателей и характеристик с целью определения готовности блока к промышленной эксплуатации.</li>
+                            <li>Проводится приемка блока приемочной комиссией в постоянную эксплуатацию.</li>
+                        </ul>
+                    </div>
+                    <div className='modal__link'>
+                        <Link to={routes.FINAL}>
+                            <span>Смотреть далее</span>
+                            <span>Промышленная эксплуатация</span>
+                        </Link>
                     </div>
                 </div>
             </Modal>
@@ -398,7 +589,7 @@ export const Aes = (props) => {
                     </div>
                 </div>
             </Modal>
-            <Modal isOpened={isTurbineOpened} onClose={() => {setIsTurbineOpened(false)}}>
+            <Modal isOpened={isTurbineOpened && step !== 'v0' && step !== 'g1' && step !== 'g2'} onClose={() => {setIsTurbineOpened(false)}}>
                 <div>
                     <div className='modal__stage-subtitle'><div>А0</div>подэтап</div>
                     <h3>Здание турбины (машзал)</h3>
@@ -414,6 +605,7 @@ export const Aes = (props) => {
                     </div>
                 </div>
             </Modal>
+            
         </div>
     );
 };
