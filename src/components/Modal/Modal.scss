@@ -208,12 +208,13 @@
 }
 
 .modal__img{
-	flex: 1;
-	margin-right: 20px;
-	margin-bottom: 40px;
+	width: 32%;
+	height: auto;
 
 	&__wrapper {
 	display: flex;
+	flex: 1;
 	justify-content: space-between;
+	margin-bottom: 40px;
 	}
 }

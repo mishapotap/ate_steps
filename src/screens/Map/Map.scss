@@ -43,8 +43,9 @@
     display: flex;
     position: relative;
     width: 68vw;
-    height: 36vh;
+    height: calc(68vw * 0.295);
     &__image {
+        height: auto;
         transition: all 1s ease;
         align-self: flex-end;
         cursor: pointer;
@@ -67,7 +68,7 @@
 // Левая стрелка
 .navigation_prev_arrow {
     position: absolute;
-    top: 19vh;
+    top: 16vh;
     left: 2.5vw;
     width: 134px;
     height: 94px;
@@ -88,7 +89,7 @@
 // // Правая стрелка
 .navigation_next_arrow {
     position: absolute;
-    top: 19vh;
+    top: 16vh;
     right: 2.5vw;
     width: 134px;
     height: 94px;

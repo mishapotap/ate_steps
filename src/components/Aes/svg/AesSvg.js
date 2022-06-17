@@ -234,7 +234,7 @@ export const AesSvg = (props) => {
 />
 
 <rect x="1020" y="490" width="70" height="30" fill="transparent" 
-    style={{cursor: 'pointer', visibility: (isCommonVisible || step === 'a3') ? 'visible' : 'hidden'}}
+    style={{cursor: 'pointer', visibility: (isCommonVisible) ? 'visible' : 'hidden'}}
     onMouseEnter={() => {setIsRdesActive(true)}}
     onClick={handleRdesClick}
     onMouseLeave={() => {setIsRdesActive(false)}}
@@ -245,7 +245,7 @@ export const AesSvg = (props) => {
     onClick={handleRdesClick}
     onMouseLeave={() => {setIsRdesActive(false)}}
 />
-<rect x="1180" y="720" width="350" height="40" fill="transparent" 
+<rect x="1200" y="660" width="350" height="40" fill="transparent" 
     style={{cursor: 'pointer', visibility: step === 'a3' ? 'visible' : 'hidden'}}
     onMouseEnter={() => {setIsRdesActive(true)}}
     onClick={handleRdesClick}
@@ -341,7 +341,7 @@ export const AesSvg = (props) => {
 />
 
 {/* А2 (Центральный реактор)*/}
-<rect x="1100" y="200" width="430" height="60" fill="transparent" 
+<rect x="1100" y="240" width="430" height="40" fill="transparent" 
     style={{cursor: 'pointer', visibility: step === 'a2' ? 'visible' : 'hidden'}}
     onMouseEnter={() => {setIsReactorActive(true)}}
     onClick={handleReactorClick}

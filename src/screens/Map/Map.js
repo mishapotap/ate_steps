@@ -93,7 +93,7 @@ export const Map = () => {
                             className='map__slide__image'
                             style={{
                                 width: isActive ? "68vw" : "45vw",
-                                height: isActive ? "36vh" : "24vh",
+                                // height: isActive ? "36vh" : "24vh",
                                 opacity: isActive ? 1 : 0.46,
                             }}>
                             </img>
@@ -141,7 +141,7 @@ export const Map = () => {
                             className='map__slide__image'
                             style={{
                                 width: isActive ? "68vw" : "45vw",
-                                height: isActive ? "36vh" : "24vh",
+                                // height: isActive ? "36vh" : "24vh",
                                 opacity: isActive ? 1 : 0.46,
                             }}>
                             </img>
@@ -208,7 +208,7 @@ export const Map = () => {
                             className='map__slide__image'
                             style={{
                                 width: isActive ? "68vw" : "45vw",
-                                height: isActive ? "36vh" : "24vh",
+                                // height: isActive ? "36vh" : "24vh",
                                 opacity: isActive ? 1 : 0.46,
                             }}>
                             </img>
@@ -261,7 +261,7 @@ export const Map = () => {
                             className='map__slide__image'
                             style={{
                                 width: isActive ? "68vw" : "45vw",
-                                height: isActive ? "36vh" : "24vh",
+                                // height: isActive ? "36vh" : "24vh",
                                 opacity: isActive ? 1 : 0.46,
                             }}>
                             </img>
@@ -307,7 +307,7 @@ export const Map = () => {
                             className='map__slide__image'
                             style={{
                                 width: isActive ? "68vw" : "45vw",
-                                height: isActive ? "36vh" : "24vh",
+                                // height: isActive ? "36vh" : "24vh",
                                 opacity: isActive ? 1 : 0.46,
                             }}>
                             </img>
