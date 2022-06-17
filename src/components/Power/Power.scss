@@ -34,6 +34,16 @@
         font-size: 15px;
         letter-spacing: 0.1em;
         color: #4EA4D9;
+        &__next {
+            position: absolute;
+            top: 50%;
+            right: 280px;
+            transform: translate(-150%, -50%);
+            font-weight: 700;
+            font-size: 15px;
+            letter-spacing: 0.1em;
+            color: #4EA4D9;
+        }
     }
 }
 

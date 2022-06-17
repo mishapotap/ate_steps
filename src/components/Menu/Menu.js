@@ -2,6 +2,7 @@ import React from 'react'
 import './Menu.css'
 import { navimg1, navimg2, navimg3, navimg4, navimg5, navicon1, navicon2, navicon3, navicon4, navicon5 } from '../../assets/img/Nav';
 import { Ellipse } from '../svg/Ellipse'
+import * as routes from '../../const/routes';
 
 export const Menu = () => {
 
@@ -11,35 +12,35 @@ export const Menu = () => {
             name: 'Текущие и выполненные проекты АТЭ',
             image: navimg1,
             icon: navicon1,
-            pathname: 'https://ate5.avt.promo/project',
+            pathname: routes.PROJECT,
           },
           {
             id: "2",
             name: 'Филиалы и Представительства АТЭ',
             image: navimg2,
             icon: navicon2,
-            pathname: 'https://ate5.avt.promo/branch',
+            pathname: routes.BRANCH,
           },
           {
             id: "3",
             name: 'История АО «Атомтехэнерго»',
             image: navimg3,
             icon: navicon3,
-            pathname: 'https://ate4.avt.promo/',
+            pathname: routes.HISTORY,
           },
           {
             id: "4",
             name: 'Этапы пусконаладочных работ АЭС',
             image: navimg4,
             icon: navicon4,
-            pathname: 'https://ate3.avt.promo/',
+            pathname: routes.HOME,
           },
           {
             id: "5",
             name: 'Портфель заказов АТЭ',
             image: navimg5,
             icon: navicon5,
-            pathname: 'https://ate5.avt.promo/portfolio',
+            pathname: routes.PORTFOLIO,
           },
     ]
     

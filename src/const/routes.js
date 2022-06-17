@@ -13,4 +13,8 @@ export const G0 = '/g0';
 export const G1 = '/g1';
 export const G2 = '/g2';
 export const FINAL = '/final';
+export const PROJECT = 'https://ate5.avt.promo/project';
+export const BRANCH = 'https://ate5.avt.promo/branch';
+export const HISTORY = 'https://ate5.avt.promo/history';
+export const PORTFOLIO = 'https://ate5.avt.promo/portfolio';
 

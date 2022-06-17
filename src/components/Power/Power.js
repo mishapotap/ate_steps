@@ -13,6 +13,7 @@ export const Power = (props) => {
             <div className='power__line' style={{width: `${percent}%`}}>
                 <div className='power__line-inner'><PowerIcon /></div>
             </div>
+            <div className='power__percent__next'>100%</div>
         </div>
 	);
 };

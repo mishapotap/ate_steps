@@ -33,7 +33,7 @@ export const Structure = () => {
                         {/* <img src={structure1_icon4} alt='' /> */}
                         {/* <img src={structure1_icon5} alt='' /> */}
                         {/* <img src={structure1_icon6} alt='' /> */}
-                        <img src={structure1_icon7} alt='' />
+                        {/* <img src={structure1_icon7} alt='' /> */}
                     </div>
                 </div>
                 <div className="structure__stage" onClick={setActiveClass}>
