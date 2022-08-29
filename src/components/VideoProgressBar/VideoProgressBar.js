@@ -1,14 +1,11 @@
 import React, { Component } from 'react'
 import cx from 'classnames'
 import './VideoProgressBar.css'
-// import Range from 'react-rangeslider'
-import Range from '../../lib/rangeslider'
 import { numberToHHMMSS } from '../../lib/utils'
 import IconPause from '../../components/Common/Icons/IconPause'
 import IconPlay2 from '../../components/Common/Icons/IconPlay2'
 import Volume from '../../components/Volume'
 import VideoControlBtn from '../../components/VideoControlBtn'
-import 'react-rangeslider/lib/index.css'
 
 export default class VideoProgressBar extends Component{
 	state = {
@@ -151,14 +148,14 @@ export default class VideoProgressBar extends Component{
 	  		</div>
 	  		<div className="progress-place">
 			  	<div className="video-progress">
-			  		<Range
+			  		{/* <Range
 		          min={0}
 		          max={100}
 		          value={progress}
 		          onChangeStart={this.handleChangeStart}
 		          onChange={this.handleChange}
 		          onChangeComplete={this.handleChangeComplete}
-		        />
+		        /> */}
 		        <div className="video-progress__counter">
 		        	<i>{this.toMinutes(currentTime)}</i> / {this.toMinutes(duration)}
 		        </div>
